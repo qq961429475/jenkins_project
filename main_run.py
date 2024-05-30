@@ -19,12 +19,12 @@ def kill_process(process_name):
         print(result.stderr)
 
 
-def open_edge_report():
+def generate_edge_report():
     os.system(f'allure generate ./allure-results-msedge/ -o ./allure-report-msedge/ --clean')
     os.system('allure open --port 10086 allure-report-msedge')
 
 
-def open_chrome_report():
+def generate_chrome_report():
     os.system(f'allure generate ./allure-results-chrome/ -o ./allure-report-chrome/ --clean')
     os.system('allure open --port 10088 allure-report-chrome')
 
@@ -41,7 +41,7 @@ def main_run(browser_name):
     config.set('browser', 'headless', 'true')
     with open(config_path, 'w', encoding='utf-8') as f:
         config.write(f)
-    subprocess.run(['pytest','-sv', '-n=2', '--alluredir', './allure-results-' + browser_name, '--clean-alluredir'])
+    subprocess.run(['pytest','-sv', '-n=2', '--alluredir', './allure-results','--clean-alluredir'])
     kill_process(f'{browser_name}*')
 
 
