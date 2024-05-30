@@ -1,1 +1,0 @@
-{"name": "test_click_fanyi3", "status": "passed", "steps": [{"name": "点击翻译", "status": "passed", "start": 1717085006645, "stop": 1717085007047}], "start": 1717085006396, "stop": 1717085009081, "uuid": "064f741a-54fd-4ecd-b8a3-e8d72c0b25fe", "testCaseId": "7aa90c627a5c85792577d682f6e85c85", "fullName": "test_case.test_baidu.test_baidu_mainpage.TestDemo#test_click_fanyi3"}
