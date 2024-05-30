@@ -46,4 +46,10 @@ def main_run(browser_name):
 
 
 if __name__ == '__main__':
-    main_run('chrome')
+    browser_name = 'chrome'
+    config.set('browser', 'name', browser_name)
+    config.set('browser', 'headless', 'true')
+    with open(config_path, 'w', encoding='utf-8') as f:
+        config.write(f)
+    pytest.main(['-sv', '-n=2', '--alluredir', './allure-results-' + browser_name, '--clean-alluredir'])
+    kill_process(f'{browser_name}*')
