@@ -1,0 +1,8 @@
+[
+  {
+    "include": "mock.json"
+  },
+  {
+    "include": "mock_1.json"
+  }
+]

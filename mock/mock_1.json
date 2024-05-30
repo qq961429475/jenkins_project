@@ -1,0 +1,25 @@
+[
+  {
+    "description": "登录功能",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "json": {
+        "username": "test_login",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "status": "222",
+      "headers": {
+        "Content-Type": "application/json;charset=utf8"
+      },
+      "json": {
+        "success": "True",
+        "code": 666,
+        "message": "恭喜登录成功",
+        "token": "qiow-8124-uiqw-1232"
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+pytest==8.2.0
+pytest-xdist==3.6.1
+selenium==4.20.0
+allure-pytest==2.13.5
+requests==2.31.0
+pytest-rerunfailures==14.0
+faker==25.2.0
+tqdm==4.66.4
+jsonpath==0.82.2
+xtestrunner==1.7.1
+pytest-html==4.1.1
+pyyaml

@@ -1,0 +1,24 @@
+- url: https://www.baidu.com
+  input:
+    - id
+    - kw
+    - 你好不要cookie不要cookie不要cookie不要cookie不要cookie不要cookie
+  click:
+    - id
+    - su
+  expected: 百度一下，你就知道
+  title: 标题1
+  ids: ids1
+  description: 用例描述1
+- url: https://www.baidu.com
+  input:
+    - id
+    - kw
+    - 你好1111111不要cookie不要cookie不要cookie不要cookie
+  click:
+    - id
+    - su
+  expected: 百度一下
+  title: 标题2
+  ids: ids2
+  description: 用例描述1

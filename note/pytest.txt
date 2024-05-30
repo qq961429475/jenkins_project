@@ -1,0 +1,59 @@
+[pytest]
+;addopts：配置命令行参数，用空格进行分隔
+;可执行标记为mark的对应用例，用or表示标记为demo或者smoke的用例都会执行
+;addopts = -vs  --alluredir=./results/json --clean-alluredir -m "demo or smoke"
+
+;注册 mark 标记
+;markers =
+;    demo : marks tests as demo
+;    smoke: marks tests as smoke
+;    uat : marks tests as uat
+;    test : marks tests as test
+;
+;指定 pytest 最低版本号
+;minversion = 5.0
+
+;测试用例的路径，可自己配置，
+;../pytestproject为上一层的pytestproject文件夹
+;./testcase为pytest.ini当前目录下的同级文件夹
+;改变用例的查找路径规则，当前目录的testcase文件夹
+;testpaths =./testcase
+
+;模块名的规则，配置测试搜索的模块文件名称
+;python_files = test*.py
+;类名的规则，配置测试搜索的测试类名
+;python_classes = Test*
+;方法名的规则，配置测试搜索的测试函数名
+;python_functions = test
+
+path：指定测试目录或文件，可以是相对路径或绝对路径。例如：pytest tests/。
+-m：选择特定标记的测试用例进行执行。例如：pytest -m "slow"。
+-k：选择包含某个关键字的测试用例进行执行。例如：pytest -k "add or subtract"。
+-x：遇到一条测试用例失败就停止测试执行。
+--pdb：当测试失败或者发生异常时，进入 Python 调试器。
+--lf：只重跑上次测试失败的测试用例。
+--ff：只重跑上次测试失败的测试用例，并在全部测试结束后再重新运行一遍这些测试用例。
+--sw：重跑上次修改过的测试模块。
+--last-failed-no-failures：只重跑上次失败的测试用例（如果没有失败的测试用例，则不执行测试）
+--collect-only：只执行测试用例的收集阶段，不运行测试用例的执行阶段。
+--pdbcls：自定义调试器的类型。
+--trace：显示 pytest 的内部跟踪信息。
+--count：运行指定数量的测试用例。例如：pytest -v --count=10。
+## pytest-xdist
+-n：并行运行测试用例，可以在后面跟一个数字指定并发度。例如：pytest -n 4。
+-x：遇到一条测试用例失败就停止测试执行。
+--maxfail=n：设定在第 n 次测试失败后停止测试执行。
+--last-failed：只重跑上次失败的测试用例。
+--failed-first：先运行之前失败的测试用例。
+
+## pytest-rerunfailures
+--reruns=n：在测试用例失败的情况下，重新运行 n 次测试。
+--pdb：当测试失败或者发生异常时，进入 Python 调试器。
+--pdbcls：自定义调试器的类型。
+--junit-xml=PATH：将测试结果输出到 JUnit XML 文件中。
+--html=PATH：将测试结果输出到 HTML 文件中。
+--tb=long/short/line/native/no：设置输出错误信息的格式。
+--capture=no：禁止捕获标准输出和标准错误，直接将它们输出到终端。
+--capture=sys/stdout/stderr：设置 pytest 的标准输出流捕获方式，有三个值可选：sys、fd、no。
+--show-capture=all/failed/no：控制是否显示捕获的标准输出流。
+--disable-warnings：禁用 pytest 的警告信息。

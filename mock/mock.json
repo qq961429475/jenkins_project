@@ -1,0 +1,13 @@
+[
+  {
+    "description": "欢迎使用moco服务",
+    "request": {
+      "uri": "/index",
+      "method": "get"
+    },
+    "response": {
+      "status": "201",
+      "text": "hello moco"
+    }
+  }
+]

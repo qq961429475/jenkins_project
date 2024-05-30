@@ -1,0 +1,142 @@
+[
+  {
+    "domain": ".baidu.com",
+    "expiry": 1749787993,
+    "httpOnly": true,
+    "name": "BDUSS",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "m5XcDZBREZqaFZCUUNManZNc2hrVnZPWHdVVzdNYnY1VW1Zblh4NEdmdFoybU5tSVFBQUFBJCQAAAAAAAAAAAEAAABrjn84ztLKx8Tjzum45wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFlNPGZZTTxmZ"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1715314363,
+    "httpOnly": false,
+    "name": "BDORZ",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "B490B5EBF6F3CD402E515D22BCDA1598"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1715314337,
+    "httpOnly": false,
+    "name": "BA_HECTOR",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "0t8g2l81a40g20e5a0a1840hiog7711j3oj911t"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1746764062,
+    "httpOnly": false,
+    "name": "H_PS_PSSID",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "40487_40080_60139"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1746341160,
+    "httpOnly": false,
+    "name": "ZFY",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "C:AfwwidH15T9HAl1Cej:BPZgGNWPNC:B1jT6icS:BZv5Jo:C"
+  },
+  {
+    "domain": "www.baidu.com",
+    "expiry": 1715237303,
+    "httpOnly": false,
+    "name": "B64_BOT",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1"
+  },
+  {
+    "domain": ".www.baidu.com",
+    "expiry": 1746341302,
+    "httpOnly": false,
+    "name": "baikeVisitId",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "6429a876-0e98-47c7-aa0a-809e7dae0f9b"
+  },
+  {
+    "domain": "www.baidu.com",
+    "expiry": 1716092062,
+    "httpOnly": false,
+    "name": "BD_UPN",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "12314753"
+  },
+  {
+    "domain": ".www.baidu.com",
+    "expiry": 1746341302,
+    "httpOnly": false,
+    "name": "channel",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "baidusearch"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1746341159,
+    "httpOnly": false,
+    "name": "BAIDUID",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "939F67A567DE5DBD2DD86CC3A681A9FB:FG=1"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1746764063,
+    "httpOnly": false,
+    "name": "BAIDUID_BFESS",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "939F67A567DE5DBD2DD86CC3A681A9FB:FG=1"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1749788063,
+    "httpOnly": true,
+    "name": "BDUSS_BFESS",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "m5XcDZBREZqaFZCUUNManZNc2hrVnZPWHdVVzdNYnY1VW1Zblh4NEdmdFoybU5tSVFBQUFBJCQAAAAAAAAAAAEAAABrjn84ztLKx8Tjzum45wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFlNPGZZTTxmZ"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1749365159,
+    "httpOnly": false,
+    "name": "BIDUPSID",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "E552AD413BF63D117469F4E0FD7F05D0"
+  },
+  {
+    "domain": ".baidu.com",
+    "expiry": 1749365159,
+    "httpOnly": false,
+    "name": "PSTM",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1714805160"
+  }
+]
