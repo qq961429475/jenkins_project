@@ -46,4 +46,4 @@ def main_run(browser_name):
 
 
 if __name__ == '__main__':
-    main_run('chrome')locals()
+    main_run('chrome')

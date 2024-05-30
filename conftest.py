@@ -42,23 +42,18 @@ def browser(request):
     options.add_experimental_option('prefs', prefs)
     options_list = [
         '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
-        'Chrome/114.0.0.0 Safari/537.36'  # 某些网站反爬，加ua可能可规避
-        '--disable-popup-blocking'  # 禁用浏览器弹窗
-        '--disable-extensions'  # 禁用插件
-        '--disable-gpu'  # 禁用gpu
-        '--disable-infobars '  # 禁用浏览器正在被自动化程序控制的提示
-        '--ignore-certificate-errors-spki-list'
-        '--no-sandbox'  # 禁用沙盒模式（因为权限会报错）
+        'Chrome/114.0.0.0 Safari/537.36',  # 某些网站反爬，加ua可能可规避
+        '--disable-popup-blocking',  # 禁用浏览器弹窗
+        '--disable-extensions', # 禁用插件
+        '--disable-gpu',  # 禁用gpu
+        '--disable-infobars',  # 禁用浏览器正在被自动化程序控制的提示
+        '--ignore-certificate-errors-spki-list',
+        '--no-sandbox',  # 禁用沙盒模式（因为权限会报错）
         'start-maximized'# gui模式下才生效
     ]
-    options.add_argument('start-maximized')
-    options.add_argument('disable-infobars')
-    options.add_argument('disable-gpu')
-    options.add_argument('d--no-sandbox')
-    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ''Chrome/114.0.0.0 Safari/537.36' )
-    options.add_argument('--disable-popup-blocking')
-    options.add_argument('--ignore-certificate-errors-spki-list')
-    options.add_argument('--disable-extensions')
+    for item in options_list:
+        options.add_argument(item)
+
     # 等于true开启无头模式：
     if config.get('browser', 'headless') == 'true':
         options.add_argument('--headless')
