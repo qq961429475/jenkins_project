@@ -1,1 +1,4 @@
 temp*
+allure*
+.idea
+__pycache__
