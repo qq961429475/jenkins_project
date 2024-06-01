@@ -3,6 +3,7 @@ import os
 import time
 
 import allure
+import jsonpath
 from selenium.common import ElementNotInteractableException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
@@ -236,8 +237,10 @@ class BasePage:
 
 def tendency_data_operate():
     # 读取已备份的json文件
+    with open('./config/history-trend_bak.json', 'r') as f:
+        index = jsonpath.jsonpath(json.load(f), '$..buildOrder')[0]+1
     f1_path = os.path.dirname(os.path.dirname(__file__)) + '/config/history-trend_bak.json'
-    f2_path = os.path.dirname(os.path.dirname(__file__)) + '/allure-report/widgets/history-trend.json'
+    f2_path = os.path.dirname(os.path.dirname(__file__)) + f'/allure-report/{index}/widgets/history-trend.json'
 
     f1 = open(f1_path, 'r+')
     f2 = open(f2_path, 'r+')
@@ -246,6 +249,8 @@ def tendency_data_operate():
     index = data_bak[0]['buildOrder']
     # 读取最新的trend数据,添加，buildOrder项
     data2[0]['buildOrder'] = index + 1
+    data2[0]['reportName'] = 'AllureReport'
+    data2[0]['reportUrl'] = f"file:///D:/desktop/jenkins_project/allure-report/{index}/index.html"
     # 向data_bak插入新数据
     data_bak.insert(0, data2[0])
     f3 = open(f1_path, 'w')
@@ -256,6 +261,7 @@ def tendency_data_operate():
     f2.close()
     f3.close()
     f4.close()
+    return index+1
 
 
 def cookie_str_to_dict(data: str) -> dict:

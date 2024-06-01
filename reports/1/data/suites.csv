@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jun 01 07:09:01 CST 2024","Sat Jun 01 07:09:03 CST 2024","2848","test_case","test_title","TestMainPage","","","test_func3[chrome]",""
+"passed","Sat Jun 01 07:09:01 CST 2024","Sat Jun 01 07:09:04 CST 2024","3754","test_case","test_title","TestMainPage","","","标题1","用例描述1-----------------------"
+"passed","Sat Jun 01 07:09:01 CST 2024","Sat Jun 01 07:09:05 CST 2024","3856","test_case","test_title","TestMainPage","","","标题2","用例描述2--------------------------"
+"failed","Sat Jun 01 07:09:00 CST 2024","Sat Jun 01 07:09:25 CST 2024","24411","test_case","test_title","TestMainPage","","","test_func4[chrome]",""
+"failed","Sat Jun 01 07:09:00 CST 2024","Sat Jun 01 07:09:01 CST 2024","1524","test_case","test_title","TestMainPage","","","test_func2[chrome]",""

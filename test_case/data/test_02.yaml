@@ -8,8 +8,8 @@
     - su
   expected: 百度一下，你就知道
   title: 标题1
-  ids: ids1
-  description: 用例描述1
+  ids: ids1 你好
+  description: 用例描述1-----------------------
 - url: https://www.baidu.com
   input:
     - id
@@ -20,5 +20,5 @@
     - su
   expected: 百度一下
   title: 标题2
-  ids: ids2
-  description: 用例描述1
+  ids: ids2 你好
+  description: 用例描述2--------------------------

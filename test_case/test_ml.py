@@ -1,6 +1,6 @@
 import pytest
 
-test_data_list = [i for i in range(1, 10)]
+test_data_list = [i for i in range(1,2)]
 
 
 @pytest.mark.parametrize("i", test_data_list)

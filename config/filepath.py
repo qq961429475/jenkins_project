@@ -4,7 +4,7 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent
 
 #
-config_path = project_root / 'config' / 'config.ini'
+config_path = project_root / 'config.ini'
 # 用例数据路径
 case_data_path = project_root / 'test_case' / 'data'
 # 百度cookie
