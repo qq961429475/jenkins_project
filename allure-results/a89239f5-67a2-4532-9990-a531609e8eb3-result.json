@@ -1,1 +1,0 @@
-{"name": "test_func4[chrome]", "status": "passed", "parameters": [{"name": "browser", "value": "'chrome'"}], "start": 1717245639356, "stop": 1717245662891, "uuid": "8653db39-eead-4cc1-afbf-d0f8da9804db", "testCaseId": "7e037bbe1b76f2a7b3b731d6ef400122", "fullName": "test_case.test_title.TestMainPage#test_func4"}
